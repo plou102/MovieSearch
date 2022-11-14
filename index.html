@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Movie</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+  <script type="module" defer src="./js/main.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+    <a href="/" class="main">Movie Search</a>
+  </header>
+  <div class="searchpage">
+  <div class="main--content">
+    <div class="main--title">OMDB API</div>
+    <div class="main--title">Movie Search</div>
+    <div class="main--inform">영화 이미지를 클릭하시면 간단한 정보가 보여집니다. <br>간단한 정보에서 보여지는 detail 버튼을 클릭하시면 자세한 정보가 보여집니다.</div>
+  </div>
+  <section class="search">
+    <input type="text" class="input__value" />
+    <select class="form-select form-select-sm select-type" id="movie__option">
+      <option value="movie">movie</option>
+      <option value="series">series</option>
+      <option value="episode">episode</option>
+    </select>
+    <select class="form-select form-select-sm select-num" id="count__option">
+      <option value="0">10</option>
+      <option value="1">20</option>
+      <option value="2">30</option>
+    </select>
+    <select class="form-select form-select-sm select-num" id="year__option">
+      <option value="">All Years</option>
+    </select>
+    <div class="search--btn">search</div>
+  </section>
+  <div class="movies" id="remove__id">
+  </div>
+  <div class="actions">
+    <div class="more--btn">More..</div>
+  </div>
+</div>
+<div class="detailpage">
+</div>
+</body>
+
+</html>

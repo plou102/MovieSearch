@@ -1,0 +1,269 @@
+body {
+  background-color: #F0F8FF;
+}
+
+.search__remove {
+  display: none;
+}
+
+/* header */
+header {
+  height: 60px;
+  padding: 7px 20px;
+  margin-bottom: 40px;
+}
+
+header .main {
+  text-decoration: none;
+  color: #333;
+  font-size: 30px;
+}
+
+/* main page */
+.main--content {
+  padding: 0 0 100px 50px;
+}
+
+.main--content .main--title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.main--content .main--inform {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 80%;
+  padding: 50px 10px;
+  margin: 20px auto;
+  background-color: #B0C4DE;
+}
+
+.movie {
+  --size: 300px;
+  width: var(--size);
+  height: calc(var(--size) * 3 / 2);
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+
+.movie .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(0,0,0,.3);
+  backdrop-filter: blur(4px);
+  color: white;
+  font-size: 20px;
+}
+
+.movie img {
+  width: 100%;
+  height: 100%;
+}
+
+.movie .back__movie {
+  position: absolute;
+  --size: 300px;
+  width: var(--size);
+  height: calc(var(--size) * 3 / 2);
+  transition-duration: 1s;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,.3);
+  backdrop-filter: blur(4px);
+}
+
+.movie .back__movie .back__title {
+  position: absolute;
+  top: calc(var(--size) * 1 / 3);
+  left: 0;
+  right: 0;
+  height: 65px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.movie .back__movie .year {
+  position: absolute;
+  top: calc(var(--size) * 1.8 / 3);
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.movie .back__movie .rating {
+  position: absolute;
+  top: calc(var(--size) * 2.6 / 3);
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.movie .back__movie .detail--btn {
+  display: inline-block;
+  position: absolute;
+  bottom: calc(var(--size) * .5 / 4);
+  left: 0;
+  right: 0;
+  width: calc(var(--size) * 1 / 4);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* more btn */
+.actions {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.more--btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #191970;
+  color: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.more--btn.remove {
+  display: none;
+}
+
+/* search btn */
+.search{
+  width: 80%;
+  height: 50px;
+  padding: 5px 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.search .input__value {
+  width: 70%;
+  height: 40px;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.search .search--btn {
+  padding: 5px 10px;
+  font-size: 20px;
+  border: 1px solid #333;
+  color: #333;
+  background-color: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.form-select {
+  width: 10%;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+/* detail page */
+.detailpage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 30px 20px;
+  justify-content: center;
+}
+
+.detailpage .poster--img {
+  height: 70%;
+  margin: 10px 40px 0 30px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #d3d3d3;
+  border: 1px solid #d3d3d3;
+}
+
+.detail {
+  padding-right: 20px;
+  width: 60%;
+}
+
+.detail .title {
+  margin: 0 0 20px;
+}
+
+.detail > span {
+  font-weight: 600;
+}
+
+.detail > span::after {
+  content: '·';
+  margin: 0 5px;
+}
+
+.detail > span:nth-child(4):after {
+  display: none;
+}
+
+.detail .plot {
+  margin: 20px 0 30px;
+}
+
+.detail .rating__content,
+.detail .actors__content,
+.detail .director__content,
+.detail .genre__content {
+  margin: 20px 0 40px;
+}
+
+.detail .rating__content .rating0,
+.detail .rating__content .rating1,
+.detail .rating__content .rating2 {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.detail .rating__content .rating0,
+.detail .rating__content .rating1,
+.detail .rating__content .rating2 > span {
+  letter-spacing: 2px;
+}
+
+.detail .rating__content .rating--img0,
+.detail .rating__content .rating--img1,
+.detail .rating__content .rating--img2 {
+  width: 50px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.detail h3 {
+  margin-bottom: 7px;
+}
