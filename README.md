@@ -1,6 +1,6 @@
 # MovieSearch
 
-#### 배포 주소 : [Movie Search](https://omdb-searchmovie.netlify.app/)
+#### 배포  : [Movie Search](https://omdb-searchmovie.netlify.app/)
 
 #### 과제 기간: 2022.11.1 ~
 <br />
